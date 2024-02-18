@@ -1,0 +1,16 @@
+{
+  "workspace": {
+    "path": "${workspaceFolder}\\GPIO\\Project\\Template\\EWARM\\Project.eww"
+  },
+  "workspaces": {
+    "${workspaceFolder}\\GPIO\\Project\\Template\\EWARM\\Project.eww": {
+      "configs": {},
+      "selected": {
+        "path": "${workspaceFolder}\\GPIO\\Project\\Template\\EWARM\\STM32F103C8T6.ewp"
+      }
+    }
+  },
+  "workbench": {
+    "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3"
+  }
+}

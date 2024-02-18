@@ -1,0 +1,19 @@
+{
+  "ewp": "${workspaceFolder}\\Project\\Template\\EWARM\\STM32F103C8T6.ewp",
+  "configuration": "Debug",
+  "toolchain": "C:\\\\Program Files (x86)\\\\IAR Systems\\\\Embedded Workbench 8.3",
+  "workspace": {
+    "path": "${workspaceFolder}\\Project\\Template\\EWARM\\Project.eww"
+  },
+  "workspaces": {
+    "${workspaceFolder}\\Project\\Template\\EWARM\\Project.eww": {
+      "configs": {},
+      "selected": {
+        "path": "${workspaceFolder}\\Project\\Template\\EWARM\\STM32F103C8T6.ewp"
+      }
+    }
+  },
+  "workbench": {
+    "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.3"
+  }
+}

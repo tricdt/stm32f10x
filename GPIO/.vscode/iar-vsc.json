@@ -1,0 +1,5 @@
+{
+    "ewp": "${workspaceFolder}\\Project\\Template\\EWARM\\STM32F103C8T6.ewp",
+    "configuration": "Debug",
+    "toolchain": "C:\\\\Program Files (x86)\\\\IAR Systems\\\\Embedded Workbench 8.3"
+}
