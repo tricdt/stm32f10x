@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "D:\MCU\STM32F10x\GPIO\Project\Template\EWARM\settings\STM32F103C8T6.Debug.general.xcl" --backend -f "D:\MCU\STM32F10x\GPIO\Project\Template\EWARM\settings\STM32F103C8T6.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\MCU\STM32F10x\GPIO\Project\Template\EWARM\settings\STM32F103C8T6.Debug.general.xcl" --backend -f "D:\MCU\STM32F10x\GPIO\Project\Template\EWARM\settings\STM32F103C8T6.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "D:\MCU\STM32F10x\GPIO\Project\Template\EWARM\settings\STM32F103C8T6.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\MCU\STM32F10x\GPIO\Project\Template\EWARM\settings\STM32F103C8T6.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\MCU\STM32F10x\GPIO\Project\Template\EWARM\settings\STM32F103C8T6.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\MCU\STM32F10x\GPIO\Project\Template\EWARM\settings\STM32F103C8T6.Debug.driver.xcl" 
 }

@@ -29,8 +29,7 @@ int main(void){
       delay_ms(1000);
       LED_IDLE;
       delay_ms(100);
-			u16 i;
-      for(i=0; i<10; i++){}
+      for(u32 i=0; i<10; i++){}
    }
 }
 

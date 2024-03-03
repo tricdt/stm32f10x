@@ -1,0 +1,400 @@
+###############################################################################
+#
+# IAR ELF Linker V9.30.1.335/W64 for ARM                  03/Mar/2024  20:46:53
+# Copyright 2007-2022 IAR Systems AB.
+#
+#    Output file  =
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Exe\STM32F103C8T6.out
+#    Map file     =
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\List\STM32F103C8T6.map
+#    Command line =
+#        -f
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Exe\STM32F103C8T6.out.rsp
+#        (D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\CMSIS\core_cm3.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\MyLibrary\delay.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\MyLibrary\led.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\User\main.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\misc.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\MyLibrary\mystm32f10x_rcc.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\EWARMv5\startup_stm32f10x_md.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_adc.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_bkp.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_can.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_cec.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_crc.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_dac.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_dbgmcu.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_dma.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_exti.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_flash.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_fsmc.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_gpio.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_i2c.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\User\stm32f10x_it.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_iwdg.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_pwr.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_rcc.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_rtc.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_sdio.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_spi.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_tim.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_usart.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver\stm32f10x_wwdg.o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\CMSIS\system_stm32f10x.o
+#        --no_out_extension -o
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Exe\STM32F103C8T6.out
+#        --map
+#        D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\List\STM32F103C8T6.map
+#        --config "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.1\arm/config/linker/ST/stm32f103x8.icf" --semihosting --entry
+#        __iar_program_start --redirect __iar_sh_stdout=__iar_sh_stdout_swo
+#        --vfe --text_out locale --cpu=Cortex-M3 --fpu=None)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Runtime   = 1
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because --advanced_heap
+was not specified and the application did not appear to
+be primarily optimized for speed.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'4fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address   Size  Object
+  -------            ----         -------   ----  ------
+"A0":                                       0xec
+  .intvec            ro code   0x800'0000   0xec  startup_stm32f10x_md.o [2]
+                             - 0x800'00ec   0xec
+
+"P1":                                      0x851
+  .text              ro code   0x800'00ec  0x270  stm32f10x_rcc.o [4]
+  .text              ro code   0x800'035c  0x198  stm32f10x_gpio.o [4]
+  .text              ro code   0x800'04f4  0x118  system_stm32f10x.o [1]
+  .text              ro code   0x800'060c   0x80  mystm32f10x_rcc.o [3]
+  .text              ro code   0x800'068c   0x60  delay.o [3]
+  .text              ro code   0x800'06ec   0x2c  stm32f10x_flash.o [4]
+  .text              ro code   0x800'0718   0x6c  main.o [5]
+  .text              ro code   0x800'0784   0x3a  packbits_init_single.o [7]
+  .text              ro code   0x800'07be   0x12  stm32f10x_it.o [5]
+  .text              ro code   0x800'07d0   0x28  data_init.o [7]
+  .iar.init_table    const     0x800'07f8   0x10  - Linker created -
+  .text              ro code   0x800'0808   0x1e  cmain.o [7]
+  .text              ro code   0x800'0826    0x4  low_level_init.o [6]
+  .text              ro code   0x800'082a    0x4  exit.o [6]
+  .text              ro code   0x800'0830    0xa  cexit.o [7]
+  .text              ro code   0x800'083c   0x14  exit.o [8]
+  .text              ro code   0x800'0850   0x1c  cstartup_M.o [7]
+  .text              ro code   0x800'086c   0x10  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'087c    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0880    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0884    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0888    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'088c    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0890    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0894    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0898    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'089c    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08a0    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08a4    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08a8    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08ac    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08b0    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08b4    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08b8    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08bc    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08c0    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08c4    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08c8    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08cc    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08d0    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08d4    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08d8    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08dc    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08e0    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08e4    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08e8    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08ec    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08f0    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08f4    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08f8    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'08fc    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0900    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0904    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0908    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'090c    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0910    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0914    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0918    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'091c    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0920    0x4  startup_stm32f10x_md.o [2]
+  .text              ro code   0x800'0924    0x4  startup_stm32f10x_md.o [2]
+  .rodata            const     0x800'0928    0x0  packbits_init_single.o [7]
+  Initializer bytes  const     0x800'0928   0x15  <for P2-1>
+                             - 0x800'093d  0x851
+
+"P2", part 1 of 2:                          0x2c
+  P2-1                        0x2000'0000   0x2c  <Init block>
+    .data            inited   0x2000'0000   0x10  stm32f10x_rcc.o [4]
+    .data            inited   0x2000'0010    0x4  stm32f10x_rcc.o [4]
+    .bss             inited   0x2000'0014   0x14  main.o [5]
+    .bss             inited   0x2000'0028    0x2  delay.o [3]
+    .bss             inited   0x2000'002a    0x1  delay.o [3]
+    .bss             inited   0x2000'002b    0x1  mystm32f10x_rcc.o [3]
+                            - 0x2000'002c   0x2c
+
+"P2", part 2 of 2:                         0x800
+  CSTACK                      0x2000'0030  0x800  <Block>
+    CSTACK           uninit   0x2000'0030  0x800  <Block tail>
+                            - 0x2000'0830  0x800
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'093d   0x800'ffff  0xf6c3
+  0x2000'002c  0x2000'002f     0x4
+  0x2000'0830  0x2000'4fff  0x47d0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x15 (47% of destination):
+           0x800'0928  0x15
+    1 destination range, total size 0x2c:
+          0x2000'0000  0x2c
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\CMSIS: [1]
+    system_stm32f10x.o          280
+    -------------------------------------------------
+    Total:                      280
+
+D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\EWARMv5: [2]
+    startup_stm32f10x_md.o      424
+    -------------------------------------------------
+    Total:                      424
+
+D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\MyLibrary: [3]
+    delay.o                      96        1        3
+    mystm32f10x_rcc.o           128        1        1
+    -------------------------------------------------
+    Total:                      224        2        4
+
+D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver: [4]
+    stm32f10x_flash.o            44
+    stm32f10x_gpio.o            408
+    stm32f10x_rcc.o             624        9       20
+    -------------------------------------------------
+    Total:                    1'076        9       20
+
+D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\User: [5]
+    main.o                      108       10       20
+    stm32f10x_it.o               18
+    -------------------------------------------------
+    Total:                      126       10       20
+
+dl7M_tln.a: [6]
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                        8
+
+rt7M_tl.a: [7]
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 28
+    data_init.o                  40
+    packbits_init_single.o       58
+    -------------------------------------------------
+    Total:                      166
+
+shb_l.a: [8]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                          4
+    Linker created                        16    2'048
+-----------------------------------------------------
+    Grand Total:              2'328       37    2'092
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base    0x800'07f8         --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'0808         --   Gb  - Linker created -
+?main                    0x800'0809        Code  Gb  cmain.o [7]
+ADC1_2_IRQHandler        0x800'08c5        Code  Wk  startup_stm32f10x_md.o [2]
+ADCPrescTable           0x2000'0010   0x4  Data  Lc  stm32f10x_rcc.o [4]
+APBAHBPrescTable        0x2000'0000  0x10  Data  Lc  stm32f10x_rcc.o [4]
+BusFault_Handler         0x800'07c5   0x2  Code  Gb  stm32f10x_it.o [5]
+CAN1_RX1_IRQHandler      0x800'08d1        Code  Wk  startup_stm32f10x_md.o [2]
+CAN1_SCE_IRQHandler      0x800'08d5        Code  Wk  startup_stm32f10x_md.o [2]
+CSTACK$$Base            0x2000'0030         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0830         --   Gb  - Linker created -
+DMA1_Channel1_IRQHandler
+                         0x800'08a9        Code  Wk  startup_stm32f10x_md.o [2]
+DMA1_Channel2_IRQHandler
+                         0x800'08ad        Code  Wk  startup_stm32f10x_md.o [2]
+DMA1_Channel3_IRQHandler
+                         0x800'08b1        Code  Wk  startup_stm32f10x_md.o [2]
+DMA1_Channel4_IRQHandler
+                         0x800'08b5        Code  Wk  startup_stm32f10x_md.o [2]
+DMA1_Channel5_IRQHandler
+                         0x800'08b9        Code  Wk  startup_stm32f10x_md.o [2]
+DMA1_Channel6_IRQHandler
+                         0x800'08bd        Code  Wk  startup_stm32f10x_md.o [2]
+DMA1_Channel7_IRQHandler
+                         0x800'08c1        Code  Wk  startup_stm32f10x_md.o [2]
+DebugMon_Handler         0x800'07cb   0x2  Code  Gb  stm32f10x_it.o [5]
+EXTI0_IRQHandler         0x800'0895        Code  Wk  startup_stm32f10x_md.o [2]
+EXTI15_10_IRQHandler     0x800'091d        Code  Wk  startup_stm32f10x_md.o [2]
+EXTI1_IRQHandler         0x800'0899        Code  Wk  startup_stm32f10x_md.o [2]
+EXTI2_IRQHandler         0x800'089d        Code  Wk  startup_stm32f10x_md.o [2]
+EXTI3_IRQHandler         0x800'08a1        Code  Wk  startup_stm32f10x_md.o [2]
+EXTI4_IRQHandler         0x800'08a5        Code  Wk  startup_stm32f10x_md.o [2]
+EXTI9_5_IRQHandler       0x800'08d9        Code  Wk  startup_stm32f10x_md.o [2]
+FLASH_IRQHandler         0x800'088d        Code  Wk  startup_stm32f10x_md.o [2]
+FLASH_PrefetchBufferCmd
+                         0x800'06ff  0x14  Code  Gb  stm32f10x_flash.o [4]
+FLASH_SetLatency         0x800'06ed  0x12  Code  Gb  stm32f10x_flash.o [4]
+GPIO_Config              0x800'074d  0x30  Code  Gb  main.o [5]
+GPIO_DeInit              0x800'035d  0xae  Code  Gb  stm32f10x_gpio.o [4]
+GPIO_Init                0x800'040b  0xc2  Code  Gb  stm32f10x_gpio.o [4]
+GPIO_ResetBits           0x800'04d3   0x6  Code  Gb  stm32f10x_gpio.o [4]
+GPIO_SetBits             0x800'04cd   0x6  Code  Gb  stm32f10x_gpio.o [4]
+HSEStartUpStatus        0x2000'002b   0x1  Data  Gb  mystm32f10x_rcc.o [3]
+HardFault_Handler        0x800'07c1   0x2  Code  Gb  stm32f10x_it.o [5]
+I2C1_ER_IRQHandler       0x800'08fd        Code  Wk  startup_stm32f10x_md.o [2]
+I2C1_EV_IRQHandler       0x800'08f9        Code  Wk  startup_stm32f10x_md.o [2]
+I2C2_ER_IRQHandler       0x800'0905        Code  Wk  startup_stm32f10x_md.o [2]
+I2C2_EV_IRQHandler       0x800'0901        Code  Wk  startup_stm32f10x_md.o [2]
+MemManage_Handler        0x800'07c3   0x2  Code  Gb  stm32f10x_it.o [5]
+NMI_Handler              0x800'07bf   0x2  Code  Gb  stm32f10x_it.o [5]
+PVD_IRQHandler           0x800'0881        Code  Wk  startup_stm32f10x_md.o [2]
+PendSV_Handler           0x800'07cd   0x2  Code  Gb  stm32f10x_it.o [5]
+RCC_APB2PeriphClockCmd   0x800'02af  0x1c  Code  Gb  stm32f10x_rcc.o [4]
+RCC_APB2PeriphResetCmd   0x800'02cb  0x1c  Code  Gb  stm32f10x_rcc.o [4]
+RCC_ClockFreq           0x2000'0014  0x14  Data  Gb  main.o [5]
+RCC_DeInit               0x800'00ed  0x40  Code  Gb  stm32f10x_rcc.o [4]
+RCC_GetClocksFreq        0x800'0203  0xac  Code  Gb  stm32f10x_rcc.o [4]
+RCC_GetFlagStatus        0x800'02e7  0x3c  Code  Gb  stm32f10x_rcc.o [4]
+RCC_GetSYSCLKSource      0x800'01c7   0xa  Code  Gb  stm32f10x_rcc.o [4]
+RCC_HCLKConfig           0x800'01d1  0x10  Code  Gb  stm32f10x_rcc.o [4]
+RCC_HSEConfig            0x800'012d  0x38  Code  Gb  stm32f10x_rcc.o [4]
+RCC_IRQHandler           0x800'0891        Code  Wk  startup_stm32f10x_md.o [2]
+RCC_PCLK1Config          0x800'01e1  0x10  Code  Gb  stm32f10x_rcc.o [4]
+RCC_PCLK2Config          0x800'01f1  0x12  Code  Gb  stm32f10x_rcc.o [4]
+RCC_PLLCmd               0x800'01af   0x8  Code  Gb  stm32f10x_rcc.o [4]
+RCC_PLLConfig            0x800'019d  0x12  Code  Gb  stm32f10x_rcc.o [4]
+RCC_SYSCLKConfig         0x800'01b7  0x10  Code  Gb  stm32f10x_rcc.o [4]
+RCC_WaitForHSEStartUp    0x800'0165  0x38  Code  Gb  stm32f10x_rcc.o [4]
+RTCAlarm_IRQHandler      0x800'0921        Code  Wk  startup_stm32f10x_md.o [2]
+RTC_IRQHandler           0x800'0889        Code  Wk  startup_stm32f10x_md.o [2]
+Region$$Table$$Base      0x800'07f8         --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'0808         --   Gb  - Linker created -
+Reset_Handler            0x800'086d        Code  Wk  startup_stm32f10x_md.o [2]
+SPI1_IRQHandler          0x800'0909        Code  Wk  startup_stm32f10x_md.o [2]
+SPI2_IRQHandler          0x800'090d        Code  Wk  startup_stm32f10x_md.o [2]
+SVC_Handler              0x800'07c9   0x2  Code  Gb  stm32f10x_it.o [5]
+SetSysClock              0x800'060d  0x12  Code  Gb  mystm32f10x_rcc.o [3]
+SetSysClock              0x800'0539   0x8  Code  Lc  system_stm32f10x.o [1]
+SetSysClockTo72          0x800'061f  0x6a  Code  Gb  mystm32f10x_rcc.o [3]
+SetSysClockTo72          0x800'0541  0xae  Code  Lc  system_stm32f10x.o [1]
+SysTick_Handler          0x800'07cf   0x2  Code  Gb  stm32f10x_it.o [5]
+SystemInit               0x800'04f5  0x44  Code  Gb  system_stm32f10x.o [1]
+TAMPER_IRQHandler        0x800'0885        Code  Wk  startup_stm32f10x_md.o [2]
+TIM1_BRK_IRQHandler      0x800'08dd        Code  Wk  startup_stm32f10x_md.o [2]
+TIM1_CC_IRQHandler       0x800'08e9        Code  Wk  startup_stm32f10x_md.o [2]
+TIM1_TRG_COM_IRQHandler
+                         0x800'08e5        Code  Wk  startup_stm32f10x_md.o [2]
+TIM1_UP_IRQHandler       0x800'08e1        Code  Wk  startup_stm32f10x_md.o [2]
+TIM2_IRQHandler          0x800'08ed        Code  Wk  startup_stm32f10x_md.o [2]
+TIM3_IRQHandler          0x800'08f1        Code  Wk  startup_stm32f10x_md.o [2]
+TIM4_IRQHandler          0x800'08f5        Code  Wk  startup_stm32f10x_md.o [2]
+USART1_IRQHandler        0x800'0911        Code  Wk  startup_stm32f10x_md.o [2]
+USART2_IRQHandler        0x800'0915        Code  Wk  startup_stm32f10x_md.o [2]
+USART3_IRQHandler        0x800'0919        Code  Wk  startup_stm32f10x_md.o [2]
+USBWakeUp_IRQHandler     0x800'0925        Code  Wk  startup_stm32f10x_md.o [2]
+USB_HP_CAN1_TX_IRQHandler
+                         0x800'08c9        Code  Wk  startup_stm32f10x_md.o [2]
+USB_LP_CAN1_RX0_IRQHandler
+                         0x800'08cd        Code  Wk  startup_stm32f10x_md.o [2]
+UsageFault_Handler       0x800'07c7   0x2  Code  Gb  stm32f10x_it.o [5]
+WWDG_IRQHandler          0x800'087d        Code  Wk  startup_stm32f10x_md.o [2]
+__cmain                  0x800'0809        Code  Gb  cmain.o [7]
+__exit                   0x800'083d  0x14  Code  Gb  exit.o [8]
+__iar_data_init3         0x800'07d1  0x28  Code  Gb  data_init.o [7]
+__iar_packbits_init_single3
+                         0x800'0785  0x3a  Code  Gb  packbits_init_single.o [7]
+__iar_program_start      0x800'0851        Code  Gb  cstartup_M.o [7]
+__low_level_init         0x800'0827   0x4  Code  Gb  low_level_init.o [6]
+__vector_table           0x800'0000        Data  Gb  startup_stm32f10x_md.o [2]
+_call_main               0x800'0815        Code  Gb  cmain.o [7]
+_exit                    0x800'0831        Code  Gb  cexit.o [7]
+delay_init               0x800'068d  0x20  Code  Gb  delay.o [3]
+delay_ms                 0x800'06ad  0x2a  Code  Gb  delay.o [3]
+exit                     0x800'082b   0x4  Code  Gb  exit.o [6]
+fac_ms                  0x2000'0028   0x2  Data  Lc  delay.o [3]
+fac_us                  0x2000'002a   0x1  Data  Lc  delay.o [3]
+main                     0x800'0719  0x34  Code  Gb  main.o [5]
+
+
+[1] = D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\CMSIS
+[2] = D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\EWARMv5
+[3] = D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\MyLibrary
+[4] = D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\StdPeriph_Driver
+[5] = D:\MCU\STM32F10x\App\Project\GPIO\EWARM\Debug\Obj\User
+[6] = dl7M_tln.a
+[7] = rt7M_tl.a
+[8] = shb_l.a
+
+  2'328 bytes of readonly  code memory
+     37 bytes of readonly  data memory
+  2'092 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
