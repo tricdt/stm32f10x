@@ -1,11 +1,11 @@
-.\objects\system_stm32f10x.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c
+.\objects\system_stm32f10x.o: ..\system_stm32f10x.c
 .\objects\system_stm32f10x.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\objects\system_stm32f10x.o: C:\Keil_v5\ARM\CMSIS\Include\core_cm3.h
 .\objects\system_stm32f10x.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 .\objects\system_stm32f10x.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
 .\objects\system_stm32f10x.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
 .\objects\system_stm32f10x.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
-.\objects\system_stm32f10x.o: ..\stm32f10x_conf.h
+.\objects\system_stm32f10x.o: ..\..\GPIO\stm32f10x_conf.h
 .\objects\system_stm32f10x.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
 .\objects\system_stm32f10x.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\objects\system_stm32f10x.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h

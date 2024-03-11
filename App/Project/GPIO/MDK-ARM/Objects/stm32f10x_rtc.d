@@ -6,7 +6,7 @@
 .\objects\stm32f10x_rtc.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
 .\objects\stm32f10x_rtc.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
 .\objects\stm32f10x_rtc.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
-.\objects\stm32f10x_rtc.o: ..\stm32f10x_conf.h
+.\objects\stm32f10x_rtc.o: ..\..\GPIO\stm32f10x_conf.h
 .\objects\stm32f10x_rtc.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
 .\objects\stm32f10x_rtc.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\objects\stm32f10x_rtc.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h

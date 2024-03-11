@@ -1,6 +1,5 @@
 #include "stm32f10x_conf.h"
-//#include "mystm32f10x.h"
-#include "mystm32f10x_rcc.h"
+#include "mystm32f10x.h"
 #include "led.h"
 #include "delay.h"
 
@@ -27,12 +26,12 @@ int main(void){
    
    RCC_GetClocksFreq(&RCC_ClockFreq);
    GPIO_Config();
-
+   MyGPIO_Deinit();
    while(1){
       LED_ACTIVE;	
-      delay_ms(10);
-      LED_IDLE;
       delay_ms(100);
+      LED_IDLE;
+      delay_ms(1000);
   }
 
 }

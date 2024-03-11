@@ -26,10 +26,10 @@ int main(void){
    GPIO_Config();
    while(1){
       LED_ACTIVE;	
-      delay_ms(1000);
-      LED_IDLE;
       delay_ms(100);
-      for(u32 i=0; i<10; i++){}
+      LED_IDLE;
+      delay_ms(1000);
+  
    }
 }
 

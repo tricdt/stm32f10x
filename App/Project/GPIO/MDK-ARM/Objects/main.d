@@ -7,7 +7,7 @@
 .\objects\main.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
 .\objects\main.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
 .\objects\main.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
-.\objects\main.o: ..\stm32f10x_conf.h
+.\objects\main.o: ..\..\GPIO\stm32f10x_conf.h
 .\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h
 .\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h
 .\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h
@@ -30,4 +30,6 @@
 .\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\objects\main.o: ..\mystm32f10x.h
+.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rcc.h
+.\objects\main.o: ..\..\..\Libraries\Led\inc\led.h
+.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\delay.h
