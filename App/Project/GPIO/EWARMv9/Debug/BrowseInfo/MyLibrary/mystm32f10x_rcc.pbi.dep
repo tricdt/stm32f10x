@@ -1,5 +1,7 @@
 D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\Debug\BrowseInfo\MyLibrary\mystm32f10x_rcc.pbi: \
   D:\MCU\STM32F10x\App\Libraries\mystm32f10x\src\mystm32f10x_rcc.c \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\main.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h \
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rcc.h \
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\CMSIS\Core\Include\core_cm3.h \
@@ -38,4 +40,14 @@ D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\Debug\BrowseInfo\MyLibrary\mystm32f10x
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h \
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h \
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_gpio.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_adc.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_i2c.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_iwdg.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_usart.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rtc.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_spi.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_tim.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rcc.h \
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc\delay.h

@@ -1,4 +1,5 @@
-
+#include "main.h"
+#include "mystm32f10x.h"
 #include "mystm32f10x_rcc.h"
 #include "delay.h"
 GPIO_InitTypeDef GPIO_InitStructure;

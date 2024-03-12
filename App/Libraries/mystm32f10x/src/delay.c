@@ -1,10 +1,14 @@
+#include "stm32f10x.h"
 #include "delay.h"
-static uint8_t  fac_us=0;
+
+static u8  fac_us=0;
 static uint16_t fac_ms=0;
+
+
 void delay_init(uint8_t SYSCLK)
 {
   SysTick->CTRL&=0xfffffffb;
-  fac_us=SYSCLK/8;		    
+  fac_us = SYSCLK/8;
   fac_ms=(uint16_t)(fac_us*1000);
 }
 
@@ -16,7 +20,7 @@ void delay_ms(uint32_t nms)
   SysTick->CTRL=0x01;         
   do
   {
-          temp=SysTick->CTRL;
+     temp=SysTick->CTRL;
   }
   while((temp&0x01)&&(!(temp&(1<<16)))); 
   SysTick->CTRL=0x00;       

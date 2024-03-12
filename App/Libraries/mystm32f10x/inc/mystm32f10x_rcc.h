@@ -2,13 +2,14 @@
 #define __MY_STM32F10x_RCC_H
 #include "stm32f10x.h"
 
-#define SYSCLK_FREQ_72MHz
+
 
 
 typedef struct _PIN {
   GPIO_InitTypeDef GPIO_InitStructure;
   GPIO_TypeDef* GPIOx;
   uint32_t GPIO_Bus;
+  
 } PIN;
 
 void SetSysClock(void);

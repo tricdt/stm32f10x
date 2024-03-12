@@ -37,4 +37,5 @@ D:\MCU\STM32F10x\App\Project\Template\EWARMv9\Debug\BrowseInfo\MyLibrary\delay.p
   D:\MCU\STM32F10x\App\Project\Template\EWARMv9\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h \
   D:\MCU\STM32F10x\App\Project\Template\EWARMv9\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h \
   D:\MCU\STM32F10x\App\Project\Template\EWARMv9\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h \
-  D:\MCU\STM32F10x\App\Project\Template\EWARMv9\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+  D:\MCU\STM32F10x\App\Project\Template\EWARMv9\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h \
+  D:\MCU\STM32F10x\App\Project\Template\EWARMv9\..\mystm32f10x.h

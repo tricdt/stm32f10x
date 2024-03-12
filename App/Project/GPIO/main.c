@@ -1,7 +1,11 @@
+
 #include "stm32f10x_conf.h"
+
 #include "mystm32f10x.h"
 #include "led.h"
 #include "delay.h"
+
+
 
 #define LED_Pin   GPIO_Pin_13
 #define LED_Speed GPIO_Speed_50MHz
@@ -10,8 +14,11 @@
 #define LED_Bus   RCC_APB2Periph_GPIOC
 
 
+
 #define LED_ACTIVE   GPIO_ResetBits(LED_Port, LED_Pin)
 #define LED_IDLE     GPIO_SetBits(LED_Port, LED_Pin)
+
+
 /*
    When breakpoint disapppear 
    The solution is go to st-link options -> debug tab -> 
@@ -20,18 +27,27 @@
 */
 
 RCC_ClocksTypeDef RCC_ClockFreq;
+
+volatile FlagStatus myTimer = 0;
 void GPIO_Config(void);
+u32 clk;
 int main(void){
    SetSysClock();
-   
    RCC_GetClocksFreq(&RCC_ClockFreq);
+ 
    GPIO_Config();
-   MyGPIO_Deinit();
+   GPIO_DeInit(LED_Port);
+   MyGPIO_Init(LED_Port, LED_Pin, LED_Mode, LED_Speed,LED_Bus);
+// MyGPIO_Init(LED_Port, LED_Pin, LED_Mode, LED_Speed, 
+    clk = RCC_ClockFreq.SYSCLK_Frequency;
+    myTimer= MyTimer_Conversion(1,0, 0);
+ 
    while(1){
       LED_ACTIVE;	
       delay_ms(100);
       LED_IDLE;
       delay_ms(1000);
+      
   }
 
 }
@@ -46,3 +62,4 @@ void GPIO_Config(void){
    GPIO_InitStructure.GPIO_Pin = LED_Pin;
    GPIO_Init(LED_Port, &GPIO_InitStructure);
 }
+

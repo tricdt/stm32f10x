@@ -2,8 +2,8 @@
   ******************************************************************************
   * @file    system_stm32f10x.c
   * @author  MCD Application Team
-  * @version V3.6.0
-  * @date    20-September-2021
+  * @version V3.5.1
+  * @date    08-September-2021
   * @brief   CMSIS Cortex-M3 Device Peripheral Access Layer System Source File.
   * 
   * 1.  This file provides two functions and one global variable to be called from 
@@ -103,15 +103,15 @@
     */
     
 #if defined (STM32F10X_LD_VL) || (defined STM32F10X_MD_VL) || (defined STM32F10X_HD_VL)
-/* #define SYSCLK_FREQ_HSE    HSE_VALUE */
+// #define SYSCLK_FREQ_HSE    HSE_VALUE 
  #define SYSCLK_FREQ_24MHz  24000000
 #else
-/* #define SYSCLK_FREQ_HSE    HSE_VALUE */
-/* #define SYSCLK_FREQ_24MHz  24000000 */ 
-/* #define SYSCLK_FREQ_36MHz  36000000 */
-/* #define SYSCLK_FREQ_48MHz  48000000 */
-/* #define SYSCLK_FREQ_56MHz  56000000 */
-#define SYSCLK_FREQ_72MHz  72000000
+//  #define SYSCLK_FREQ_HSE    HSE_VALUE 
+// #define SYSCLK_FREQ_24MHz  24000000 
+//#define SYSCLK_FREQ_36MHz  36000000 
+//  #define SYSCLK_FREQ_48MHz  48000000 
+//  #define SYSCLK_FREQ_56MHz  56000000 
+ #define SYSCLK_FREQ_72MHz  72000000
 #endif
 
 /*!< Uncomment the following line if you need to use external SRAM mounted
@@ -293,7 +293,7 @@ void SystemInit (void)
   *             in voltage and temperature.   
   *    
   *         (**) HSE_VALUE is a constant defined in stm32f1xx.h file (default value
-  *              8 MHz or 25 MHz, depedning on the product used), user has to ensure
+  *              8 MHz or 25 MHz, depending on the product used), user has to ensure
   *              that HSE_VALUE is same as the real frequency of the crystal used.
   *              Otherwise, this function may have wrong result.
   *                

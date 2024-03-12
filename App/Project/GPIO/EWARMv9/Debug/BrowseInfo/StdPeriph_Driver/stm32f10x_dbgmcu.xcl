@@ -25,6 +25,8 @@ D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc
 -I
 D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\Applications\inc
 -I
+D:\MCU\STM32F10x\App\Project\GPIO\EWARMv9\..\..\..\Libraries\mystm32f10x\inc
+-I
 C:\Program Files\IAR Systems\Embedded Workbench 9.1\arm\CMSIS\Core\Include\
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.1\arm\inc\c\aarch32
@@ -46,6 +48,8 @@ D:\MCU\STM32F10x\App\Libraries\Led\inc
 D:\MCU\STM32F10x\App\Libraries\mystm32f10x\inc
 -I
 D:\MCU\STM32F10x\App\Libraries\Applications\inc
+-I
+D:\MCU\STM32F10x\App\Libraries\mystm32f10x\inc
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.1\arm\CMSIS\Core\Include
 -D__CHAR_BITS__=8

@@ -1,0 +1,16 @@
+{
+  "workspace": {
+    "path": "${workspaceFolder}\\Project.eww"
+  },
+  "workspaces": {
+    "${workspaceFolder}\\Project.eww": {
+      "configs": {},
+      "selected": {
+        "path": "${workspaceFolder}\\STM32F103C8T6.ewp"
+      }
+    }
+  },
+  "workbench": {
+    "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1"
+  }
+}

@@ -1,0 +1,85 @@
+
+Call graph (*** = already visited):
+
+  Uncalled:
+  0 BusFault_Handler [0]
+
+  Uncalled:
+  0 DebugMon_Handler [0]
+
+  Uncalled:
+  0 HardFault_Handler [0]
+
+  Uncalled:
+  0 MemManage_Handler [0]
+
+  Uncalled:
+  0 NMI_Handler [0]
+
+  Uncalled:
+  0 PendSV_Handler [0]
+
+  Uncalled:
+  0 SVC_Handler [0]
+
+  Uncalled:
+  0 SysTick_Handler [0]
+
+  Uncalled:
+  0 UsageFault_Handler [0]
+
+  Uncalled:
+  0 SystemInit [24]
+    8 SetSysClock (system_stm32f10x.o) [16]
+      16 SetSysClockTo24 (system_stm32f10x.o) [8]
+        24 - [0]
+
+  Program entry:
+  0 __iar_program_start [56]
+    0 __cmain [56]
+      0 __iar_data_init3 [20]
+        8 __iar_packbits_init_single3 [12]
+          20 - [0]
+      0 __low_level_init [0]
+      0 main [56]
+        16 GPIO_Config [32]
+          32 GPIO_DeInit [8]
+            40 RCC_APB2PeriphResetCmd [0]
+          32 GPIO_Init [16]
+            48 - [0]
+          32 RCC_APB2PeriphClockCmd [0]
+        16 GPIO_DeInit [8] ***
+        16 GPIO_ResetBits [0]
+        16 GPIO_SetBits [0]
+        16 MyGPIO_Init [40]
+          40 GPIO_Init [16] ***
+          40 RCC_APB2PeriphClockCmd [0] ***
+        16 MyTimer_Conversion [16]
+          32 - [0]
+        16 RCC_GetClocksFreq [4]
+          20 - [0]
+        16 SetSysClock [24]
+          24 SetSysClockTo72 [16]
+            32 FLASH_PrefetchBufferCmd [0]
+            32 FLASH_SetLatency [0]
+            32 RCC_DeInit [0]
+            32 RCC_GetFlagStatus [0]
+            32 RCC_GetSYSCLKSource [0]
+            32 RCC_HCLKConfig [0]
+            32 RCC_HSEConfig [0]
+            32 RCC_PCLK1Config [0]
+            32 RCC_PCLK2Config [0]
+            32 RCC_PLLCmd [0]
+            32 RCC_PLLConfig [0]
+            32 RCC_SYSCLKConfig [0]
+            32 RCC_WaitForHSEStartUp [8]
+              40 RCC_GetFlagStatus [0] ***
+          24 RCC_DeInit [0] ***
+          24 delay_init [0]
+        16 delay_ms [0]
+      0 exit [8]
+        0 _exit [8]
+          0 __exit [8]
+            8 - [0]
+
+
