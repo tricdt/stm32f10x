@@ -1,5 +1,5 @@
-#include "stm32f10x.h"
-#include "delay.h"
+
+#include "mystm32f10x_delay.h"
 
 static u8  fac_us=0;
 static uint16_t fac_ms=0;

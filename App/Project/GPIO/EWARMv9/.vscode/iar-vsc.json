@@ -4,7 +4,9 @@
   },
   "workspaces": {
     "${workspaceFolder}\\Project.eww": {
-      "configs": {},
+      "configs": {
+        "${workspaceFolder}\\STM32F103C8T6.ewp": "Debug"
+      },
       "selected": {
         "path": "${workspaceFolder}\\STM32F103C8T6.ewp"
       }

@@ -1,6 +1,7 @@
 #ifndef __MY_STM32F10x_H
 #define __MY_STM32F10x_H
-
+#include "main.h"
+#include "mystm32f10x_delay.h"
 #include "mystm32f10x_rcc.h"
 #include "mystm32f10x_gpio.h"
 #include "mystm32f10x_adc.h"

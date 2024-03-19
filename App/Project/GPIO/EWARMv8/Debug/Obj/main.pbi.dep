@@ -1,7 +1,17 @@
 main.pbi: \
-  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc\delay.h \
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\Led\inc\led.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_tim.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_spi.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rtc.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_usart.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_iwdg.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_i2c.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_adc.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_gpio.h \
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rcc.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_delay.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\main.h \
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h \
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h \
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h \

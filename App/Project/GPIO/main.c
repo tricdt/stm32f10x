@@ -3,7 +3,7 @@
 
 #include "mystm32f10x.h"
 #include "led.h"
-#include "delay.h"
+
 
 
 
@@ -32,25 +32,34 @@ volatile FlagStatus myTimer = 0;
 void GPIO_Config(void);
 u32 clk;
 int main(void){
-   SetSysClock();
+//   SetSysClock();
    RCC_GetClocksFreq(&RCC_ClockFreq);
  
    GPIO_Config();
    GPIO_DeInit(LED_Port);
    MyGPIO_Init(LED_Port, LED_Pin, LED_Mode, LED_Speed,LED_Bus);
 // MyGPIO_Init(LED_Port, LED_Pin, LED_Mode, LED_Speed, 
-    clk = RCC_ClockFreq.SYSCLK_Frequency;
-    myTimer= MyTimer_Conversion(1,0, 0);
+   clk = RCC_ClockFreq.SYSCLK_Frequency;
  
+   DWTDelay_Init();
+   MyTimer_Init(TIM1, 0, 100, 0, 0, 0, 0);
+   MyTimer_OnOrOffIrq(TIM1, SET);
+//   MyTimer_Start(TIM1);
+   //TIM2_Config();
+  //TIM1_Config();
    while(1){
-      LED_ACTIVE;	
-      delay_ms(100);
-      LED_IDLE;
-      delay_ms(1000);
+//      LED_ACTIVE;	
+//      DWTDelay_ms(100);
+//      // delay_ms(100);
+//      LED_IDLE;
+//      DWTDelay_ms(1000);
+//      // delay_ms(1000);
       
   }
 
 }
+
+
 
 void GPIO_Config(void){
    GPIO_DeInit(LED_Port);
@@ -62,4 +71,22 @@ void GPIO_Config(void){
    GPIO_InitStructure.GPIO_Pin = LED_Pin;
    GPIO_Init(LED_Port, &GPIO_InitStructure);
 }
+
+void TIM1_UP_IRQHandler(void) {
+  if(TIM_GetFlagStatus(TIM1, TIM_FLAG_Update)){
+    TIM_ClearFlag(TIM1, TIM_FLAG_Update);
+	 MyGPIO_Toggle(LED_Port, 13);
+  }
+   TIM_ClearITPendingBit(TIM1, TIM_FLAG_Update);
+}
+
+void TIM2_IRQHandler(void){
+   
+   if(TIM_GetFlagStatus(TIM2, TIM_IT_Update!=RESET))
+   {
+      MyGPIO_Toggle(LED_Port, 13);
+      TIM_ClearFlag(TIM2, TIM_FLAG_Update);
+   }
+}
+
 

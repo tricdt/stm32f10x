@@ -1,5 +1,6 @@
 {
    "files.associations": {
-      "mystm32f10x.h": "c"
+      "mystm32f10x.h": "c",
+      "mystm32f10x_tim.h": "c"
    }
 }

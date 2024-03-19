@@ -1,0 +1,43 @@
+{
+   // Use IntelliSense to learn about possible attributes.
+   // Hover to view descriptions of existing attributes.
+   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+   "version": "0.2.0",
+   "configurations": [
+      {
+         "type": "cspy",
+         "request": "launch",
+         "name": "Launch: STM32F103C8T6.Debug",
+         "target": "arm",
+         "program": "${workspaceFolder}\\Debug\\Exe\\STM32F103C8T6.out",
+         "driver": "ST-LINK",
+         "stopOnSymbol": "main",
+         "workbenchPath": "${command:iar-config.toolchain}",
+         "projectPath": "${workspaceFolder}\\STM32F103C8T6.ewp",
+         "projectConfiguration": "Debug",
+         "driverOptions": [
+            "--crun=disabled",
+            "--endian=little",
+            "--cpu=Cortex-M3",
+            "--fpu=None",
+            "-p",
+            "$TOOLKIT_DIR$\\CONFIG\\debugger\\ST\\STM32F103C8.ddf",
+            "--drv_verify_download",
+            "--semihosting",
+            "--device=STM32F103C8",
+            "--drv_interface=SWD",
+            "--stlink_reset_strategy=0,4",
+            "--drv_swo_clock_setup=72000000,0,2000000",
+            "--drv_catch_exceptions=0x000",
+            "--drv_debug_ap=0",
+            "--stlink_probe=stlinkv2"
+         ],
+         "download": {
+            "flashLoader": "$TOOLKIT_DIR$\\config\\flashloader\\ST\\FlashSTM32F10xx8.board",
+            "deviceMacros": [
+               "$TOOLKIT_DIR$\\config\\debugger\\ST\\STM32F1xx.dmac"
+            ]
+         }
+      }
+   ]
+}

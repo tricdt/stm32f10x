@@ -1,10 +1,14 @@
-#include "main.h"
+
 #include "mystm32f10x.h"
-#include "mystm32f10x_rcc.h"
-#include "delay.h"
+
 GPIO_InitTypeDef GPIO_InitStructure;
 ErrorStatus HSEStartUpStatus;
-
+/*
+   When breakpoint disapppear in KeilC
+   The solution is go to st-link options -> debug tab -> 
+   download options -> Uncheck Download to flash. 
+   Now debugger works perfectly
+*/
 
 void SetSysClock(void)
 {   

@@ -1,6 +1,5 @@
 #include "mystm32f10x.h"
-#include "stm32f10x_tim.h"
-#include "main.h"
+
 u32 mPsc; // Giá trị đặt trước
 u32 mArr; //Giá trị ban đầu của bộ đếm
 u8 ErrorMessage;
@@ -23,12 +22,32 @@ void TIM2_Config(void)
   NVIC_Init(&NVIC_Initstructure);  
 }
 
+void TIM1_Config(void){
+   #ifdef USE_TIMER
+      TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
+      NVIC_InitTypeDef NVIC_Initstructure;
+   #endif
+
+   RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM1, ENABLE);
+   TIM_TimeBaseInitStructure.TIM_Prescaler = 0x0465-1;
+   TIM_TimeBaseInitStructure.TIM_Period = 0xFA00-1;
+   TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up;
+   TIM_TimeBaseInit(TIM1, &TIM_TimeBaseInitStructure);
+   TIM_ClearFlag(TIM1, TIM_FLAG_Update);
+   TIM_ITConfig(TIM1, TIM_IT_Update, ENABLE);
+   TIM_Cmd(TIM1, ENABLE);
+   NVIC_Initstructure.NVIC_IRQChannel = TIM1_UP_IRQn;
+   NVIC_Initstructure.NVIC_IRQChannelPreemptionPriority = 0;
+   NVIC_Initstructure.NVIC_IRQChannelSubPriority = 0;
+   NVIC_Initstructure.NVIC_IRQChannelCmd = ENABLE;
+   NVIC_Init(&NVIC_Initstructure);  
+}
 void MyTimer_Init(TIM_TypeDef *timer,u16 second,u16 millisecond,u16 microsecond,u8 Prioritygroup,u8 preemprionPriority,u8 subPriority){
    #ifdef USE_TIMER
       uint8_t timerIrqChannel;
 	   TIM_TimeBaseInitTypeDef TIM_BaseInitStructure;
 	   NVIC_InitTypeDef NVIC_InitStructure;
-      if(MyTimer_Conversion(second, millisecond, microsecond)){
+      if(!MyTimer_Conversion(second, millisecond, microsecond)){
          ErrorMessage = 1; return;
       }
 	#ifndef USE_TIMER1
@@ -78,6 +97,7 @@ void MyTimer_Init(TIM_TypeDef *timer,u16 second,u16 millisecond,u16 microsecond,
    TIM_TimeBaseInit(timer, &TIM_BaseInitStructure);
    TIM_ClearFlag(timer, TIM_FLAG_Update);
    TIM_ITConfig(timer, TIM_IT_Update, ENABLE);
+   TIM_Cmd(timer, ENABLE);
    switch (Prioritygroup)
    {
       case 0:
@@ -159,4 +179,12 @@ void MyTimer_OnOrOffIrq(TIM_TypeDef *timer, FlagStatus Switch){
 void MyTimer_ClearCNT(TIM_TypeDef *timer)
 {
    timer->CNT &=0;
+}
+
+void MyTimer_Start(TIM_TypeDef *timer){
+   TIM_Cmd(timer, ENABLE);
+}
+
+void MyTimer_Stop(TIM_TypeDef *timer){
+   TIM_Cmd(timer, DISABLE);
 }

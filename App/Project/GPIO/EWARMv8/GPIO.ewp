@@ -775,7 +775,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>lnk0t.icf</state>
+                    <state>$TOOLKIT_DIR$\config\linker\ST\stm32f103x8.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -835,7 +835,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state></state>
+                    <state>__iar_program_start</state>
                 </option>
                 <option>
                     <name>DoFill</name>
@@ -1008,7 +1008,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>###Unitialized###</state>
+                    <state>GPIO_import_lib.o</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -2128,13 +2128,34 @@
     <group>
         <name>MyLibrary</name>
         <file>
-            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\delay.c</name>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_adc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_delay.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_gpio.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_i2c.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_iwdg.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_rcc.c</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_rtc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_spi.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_tim.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_usart.c</name>
         </file>
     </group>
     <group>

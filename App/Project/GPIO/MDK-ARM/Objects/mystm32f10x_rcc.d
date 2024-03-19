@@ -1,5 +1,7 @@
 .\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\src\mystm32f10x_rcc.c
-.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rcc.h
+.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h
+.\objects\mystm32f10x_rcc.o: ..\..\GPIO\main.h
+.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_delay.h
 .\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\objects\mystm32f10x_rcc.o: C:\Keil_v5\ARM\CMSIS\Include\core_cm3.h
 .\objects\mystm32f10x_rcc.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
@@ -31,4 +33,13 @@
 .\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\delay.h
+.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rcc.h
+.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_gpio.h
+.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_adc.h
+.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h
+.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_i2c.h
+.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_iwdg.h
+.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_usart.h
+.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rtc.h
+.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_spi.h
+.\objects\mystm32f10x_rcc.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_tim.h

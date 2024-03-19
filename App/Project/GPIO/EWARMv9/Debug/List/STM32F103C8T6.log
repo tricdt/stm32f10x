@@ -2,6 +2,22 @@
 Call graph (*** = already visited):
 
   Uncalled:
+  0 TIM1_UP_IRQHandler [24]
+    8 MyGPIO_Toggle [16]
+      24 GPIO_ReadInputDataBit [0]
+      24 GPIO_ResetBits [0]
+      24 GPIO_SetBits [0]
+    8 TIM_ClearFlag [0]
+    8 TIM_ClearITPendingBit [0]
+    8 TIM_GetFlagStatus [0]
+
+  Uncalled:
+  0 TIM2_IRQHandler [24]
+    8 MyGPIO_Toggle [16] ***
+    8 TIM_ClearFlag [0] ***
+    8 TIM_GetFlagStatus [0] ***
+
+  Uncalled:
   0 BusFault_Handler [0]
 
   Uncalled:
@@ -31,52 +47,42 @@ Call graph (*** = already visited):
   Uncalled:
   0 SystemInit [24]
     8 SetSysClock (system_stm32f10x.o) [16]
-      16 SetSysClockTo24 (system_stm32f10x.o) [8]
+      16 SetSysClockTo72 (system_stm32f10x.o) [8]
         24 - [0]
 
   Program entry:
-  0 __iar_program_start [56]
-    0 __cmain [56]
+  0 __iar_program_start [72]
+    0 __cmain [72]
       0 __iar_data_init3 [20]
         8 __iar_packbits_init_single3 [12]
           20 - [0]
       0 __low_level_init [0]
-      0 main [56]
-        16 GPIO_Config [32]
-          32 GPIO_DeInit [8]
-            40 RCC_APB2PeriphResetCmd [0]
-          32 GPIO_Init [16]
-            48 - [0]
-          32 RCC_APB2PeriphClockCmd [0]
-        16 GPIO_DeInit [8] ***
-        16 GPIO_ResetBits [0]
-        16 GPIO_SetBits [0]
-        16 MyGPIO_Init [40]
-          40 GPIO_Init [16] ***
-          40 RCC_APB2PeriphClockCmd [0] ***
-        16 MyTimer_Conversion [16]
-          32 - [0]
-        16 RCC_GetClocksFreq [4]
-          20 - [0]
-        16 SetSysClock [24]
-          24 SetSysClockTo72 [16]
-            32 FLASH_PrefetchBufferCmd [0]
-            32 FLASH_SetLatency [0]
-            32 RCC_DeInit [0]
-            32 RCC_GetFlagStatus [0]
-            32 RCC_GetSYSCLKSource [0]
-            32 RCC_HCLKConfig [0]
-            32 RCC_HSEConfig [0]
-            32 RCC_PCLK1Config [0]
-            32 RCC_PCLK2Config [0]
-            32 RCC_PLLCmd [0]
-            32 RCC_PLLConfig [0]
-            32 RCC_SYSCLKConfig [0]
-            32 RCC_WaitForHSEStartUp [8]
-              40 RCC_GetFlagStatus [0] ***
-          24 RCC_DeInit [0] ***
-          24 delay_init [0]
-        16 delay_ms [0]
+      0 main [72]
+        24 GPIO_Config [32]
+          40 GPIO_DeInit [8]
+            48 RCC_APB2PeriphResetCmd [0]
+          40 GPIO_Init [16]
+            56 - [0]
+          40 RCC_APB2PeriphClockCmd [0]
+        24 DWTDelay_Init [0]
+        24 GPIO_DeInit [8] ***
+        24 MyGPIO_Init [40]
+          48 GPIO_Init [16] ***
+          48 RCC_APB2PeriphClockCmd [0] ***
+        24 MyTimer_Init [48]
+          56 MyTimer_Conversion [16]
+            72 - [0]
+          56 NVIC_Init [0]
+          56 NVIC_PriorityGroupConfig [0]
+          56 RCC_APB2PeriphClockCmd [0] ***
+          56 TIM_ClearFlag [0] ***
+          56 TIM_Cmd [0]
+          56 TIM_ITConfig [0]
+          56 TIM_TimeBaseInit [4]
+            60 - [0]
+        24 MyTimer_OnOrOffIrq [0]
+        24 RCC_GetClocksFreq [4]
+          28 - [0]
       0 exit [8]
         0 _exit [8]
           0 __exit [8]

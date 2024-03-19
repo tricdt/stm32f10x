@@ -22,23 +22,45 @@ Dialog DLL:      TARMSTM.DLL V1.67.1.0
  
 <h2>Project:</h2>
 D:\MCU\STM32F10x\App\Project\GPIO\MDK-ARM\GPIO.uvprojx
-Project File Date:  03/05/2024
+Project File Date:  03/20/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.03 [Build 24]', folder: 'C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin'
 Build target 'STM32F103C8T6'
 compiling main.c...
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rcc.h(24): warning:  #1-D: last line of file ends without a newline
+..\..\GPIO\main.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_delay.h(41): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rcc.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_gpio.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_adc.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_i2c.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_iwdg.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_usart.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rtc.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_spi.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h(15): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\..\..\Libraries\Led\inc\led.h(5): warning:  #1-D: last line of file ends without a newline
   #endif
-..\..\..\Libraries\mystm32f10x\inc\delay.h(9): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\main.c: 3 warnings, 0 errors
+..\main.c(31): warning:  #188-D: enumerated type mixed with another type
+  volatile FlagStatus myTimer = 0;
+..\main.c: 14 warnings, 0 errors
 linking...
-Program Size: Code=1864 RO-data=268 RW-data=28 ZI-data=1652  
+Program Size: Code=2792 RO-data=300 RW-data=40 ZI-data=1656  
 FromELF: creating hex file...
-".\Objects\GPIO.axf" - 0 Error(s), 3 Warning(s).
+".\Objects\GPIO.axf" - 0 Error(s), 14 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -51,7 +73,7 @@ Package Vendor: Keil
   C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>

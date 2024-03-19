@@ -2387,13 +2387,34 @@
     <group>
         <name>MyLibrary</name>
         <file>
-            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\delay.c</name>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_adc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_delay.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_gpio.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_i2c.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_iwdg.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_rcc.c</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_rtc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_spi.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_tim.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_usart.c</name>
         </file>
     </group>
     <group>
