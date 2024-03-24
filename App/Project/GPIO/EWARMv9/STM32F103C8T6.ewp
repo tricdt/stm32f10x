@@ -352,6 +352,7 @@
                     <state>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\inc</state>
                     <state>$PROJ_DIR$\..\..\..\Libraries\Applications\inc</state>
                     <state>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\Libraries\stm32f10xEx</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -2179,6 +2180,9 @@
             <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_i2c.c</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_it.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_iwdg.c</name>
         </file>
         <file>
@@ -2267,6 +2271,12 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c</name>
+        </file>
+    </group>
+    <group>
+        <name>stm32f10xEx</name>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\stm32f10xEx\MeM.c</name>
         </file>
     </group>
     <group>

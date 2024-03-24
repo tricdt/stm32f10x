@@ -2,19 +2,20 @@
 Call graph (*** = already visited):
 
   Uncalled:
-  0 TIM1_UP_IRQHandler [24]
+  0 TIM2_IRQHandler [24]
     8 MyGPIO_Toggle [16]
       24 GPIO_ReadInputDataBit [0]
       24 GPIO_ResetBits [0]
       24 GPIO_SetBits [0]
     8 TIM_ClearFlag [0]
-    8 TIM_ClearITPendingBit [0]
     8 TIM_GetFlagStatus [0]
 
   Uncalled:
-  0 TIM2_IRQHandler [24]
-    8 MyGPIO_Toggle [16] ***
+  0 TIM1_UP_IRQHandler [32]
+    8 TIM1_IRQn [24]
+      16 MyGPIO_Toggle [16] ***
     8 TIM_ClearFlag [0] ***
+    8 TIM_ClearITPendingBit [0]
     8 TIM_GetFlagStatus [0] ***
 
   Uncalled:
@@ -83,6 +84,24 @@ Call graph (*** = already visited):
         24 MyTimer_OnOrOffIrq [0]
         24 RCC_GetClocksFreq [4]
           28 - [0]
+        24 SetSysClock [24]
+          32 SetSysClockTo72 [16]
+            40 FLASH_PrefetchBufferCmd [0]
+            40 FLASH_SetLatency [0]
+            40 RCC_DeInit [0]
+            40 RCC_GetFlagStatus [0]
+            40 RCC_GetSYSCLKSource [0]
+            40 RCC_HCLKConfig [0]
+            40 RCC_HSEConfig [0]
+            40 RCC_PCLK1Config [0]
+            40 RCC_PCLK2Config [0]
+            40 RCC_PLLCmd [0]
+            40 RCC_PLLConfig [0]
+            40 RCC_SYSCLKConfig [0]
+            40 RCC_WaitForHSEStartUp [8]
+              48 RCC_GetFlagStatus [0] ***
+          32 RCC_DeInit [0] ***
+          32 delay_init [0]
       0 exit [8]
         0 _exit [8]
           0 __exit [8]

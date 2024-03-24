@@ -1,6 +1,8 @@
 {
    "files.associations": {
       "mystm32f10x.h": "c",
-      "mystm32f10x_tim.h": "c"
+      "mystm32f10x_tim.h": "c",
+      "stm32f10x_conf.h": "c",
+      "mem.h": "c"
    }
 }

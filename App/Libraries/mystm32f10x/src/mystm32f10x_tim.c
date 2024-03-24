@@ -3,6 +3,7 @@
 u32 mPsc; // Giá trị đặt trước
 u32 mArr; //Giá trị ban đầu của bộ đếm
 u8 ErrorMessage;
+
 void TIM2_Config(void)
 {
   TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
@@ -43,52 +44,30 @@ void TIM1_Config(void){
    NVIC_Init(&NVIC_Initstructure);  
 }
 void MyTimer_Init(TIM_TypeDef *timer,u16 second,u16 millisecond,u16 microsecond,u8 Prioritygroup,u8 preemprionPriority,u8 subPriority){
-   #ifdef USE_TIMER
-      uint8_t timerIrqChannel;
-	   TIM_TimeBaseInitTypeDef TIM_BaseInitStructure;
-	   NVIC_InitTypeDef NVIC_InitStructure;
-      if(!MyTimer_Conversion(second, millisecond, microsecond)){
-         ErrorMessage = 1; return;
-      }
-	#ifndef USE_TIMER1
-	#ifndef USE_TIMER2
-	#ifndef USE_TIMER3
-	#ifndef USE_TIMER4
-		return ;
-	#endif
-	#endif
-	#endif
-	#endif
-
-      
-   if(timer==TIM1){
-      #ifdef USE_TIMER1
-		RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM1, ENABLE);
-		timerIrqChannel=TIM1_UP_IRQn;
-		#endif
+   #if !defined USE_TIMER1 && !defined USE_TIMER2 && !defined USE_TIMER3 && !defined USE_TIMER4
+      return;
+   #endif
+   #if defined USE_TIMER1 || defined USE_TIMER2 || defined USE_TIMER3 || defined USE_TIMER4
+   uint8_t timerIrqChannel;
+   TIM_TimeBaseInitTypeDef TIM_BaseInitStructure;
+   NVIC_InitTypeDef NVIC_InitStructure;
+   if(!MyTimer_Conversion(second, millisecond, microsecond)){
+      ErrorMessage = 1; return;
    }
-   else if(timer==TIM2)
-	{
-		#ifdef USE_TIMER2
-		RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
-		timerIrqChannel=TIM2_IRQn;
-		#endif
-	}
-	else if(timer==TIM3)
-	{
-		#ifdef USE_TIMER3
-		RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
-		timerIrqChannel=TIM3_IRQn;
-		#endif
-	}
-	else if(timer==TIM4)
-	{
-		#ifdef USE_TIMER4
-		RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
-		timerIrqChannel=TIM4_IRQn;
-		#endif
-	}
-   else{}
+   #ifdef USE_TIMER1
+   RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM1, ENABLE);
+   timerIrqChannel=TIM1_UP_IRQn;
+   #elif defined USE_TIMER2
+   RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+   timerIrqChannel=TIM2_IRQn;
+   #elif defined USE_TIMER3
+   RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
+   timerIrqChannel=TIM3_IRQn;
+   #elif defined USE_TIMER4
+   RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+   timerIrqChannel=TIM4_IRQn;
+   #endif
+   
    TIM_BaseInitStructure.TIM_Period = mArr - 1;
    TIM_BaseInitStructure.TIM_Prescaler = mPsc - 1;
    TIM_BaseInitStructure.TIM_ClockDivision = 0;

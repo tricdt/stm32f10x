@@ -11,5 +11,5 @@
 #include "mystm32f10x_rtc.h"
 #include "mystm32f10x_spi.h"
 #include "mystm32f10x_tim.h"
-
+#include "mystm32f10x_it.h"
 #endif

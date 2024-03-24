@@ -31,3 +31,17 @@
 .\objects\stm32f10x_it.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\stm32f10x_it.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\stm32f10x_it.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\stm32f10x_it.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h
+.\objects\stm32f10x_it.o: ..\..\GPIO\main.h
+.\objects\stm32f10x_it.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_delay.h
+.\objects\stm32f10x_it.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rcc.h
+.\objects\stm32f10x_it.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_gpio.h
+.\objects\stm32f10x_it.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_adc.h
+.\objects\stm32f10x_it.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h
+.\objects\stm32f10x_it.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_i2c.h
+.\objects\stm32f10x_it.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_iwdg.h
+.\objects\stm32f10x_it.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_usart.h
+.\objects\stm32f10x_it.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rtc.h
+.\objects\stm32f10x_it.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_spi.h
+.\objects\stm32f10x_it.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_tim.h
+.\objects\stm32f10x_it.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_it.h

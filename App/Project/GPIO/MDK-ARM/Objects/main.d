@@ -43,4 +43,5 @@
 .\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rtc.h
 .\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_spi.h
 .\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_tim.h
+.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_it.h
 .\objects\main.o: ..\..\..\Libraries\Led\inc\led.h

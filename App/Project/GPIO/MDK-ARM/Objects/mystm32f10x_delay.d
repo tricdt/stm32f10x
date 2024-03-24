@@ -43,3 +43,4 @@
 .\objects\mystm32f10x_delay.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rtc.h
 .\objects\mystm32f10x_delay.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_spi.h
 .\objects\mystm32f10x_delay.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_tim.h
+.\objects\mystm32f10x_delay.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_it.h

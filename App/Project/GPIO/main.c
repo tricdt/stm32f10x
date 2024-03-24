@@ -28,13 +28,13 @@
 
 RCC_ClocksTypeDef RCC_ClockFreq;
 
+
 volatile FlagStatus myTimer = 0;
 void GPIO_Config(void);
 u32 clk;
 int main(void){
-//   SetSysClock();
+   SetSysClock();
    RCC_GetClocksFreq(&RCC_ClockFreq);
- 
    GPIO_Config();
    GPIO_DeInit(LED_Port);
    MyGPIO_Init(LED_Port, LED_Pin, LED_Mode, LED_Speed,LED_Bus);
@@ -72,13 +72,6 @@ void GPIO_Config(void){
    GPIO_Init(LED_Port, &GPIO_InitStructure);
 }
 
-void TIM1_UP_IRQHandler(void) {
-  if(TIM_GetFlagStatus(TIM1, TIM_FLAG_Update)){
-    TIM_ClearFlag(TIM1, TIM_FLAG_Update);
-	 MyGPIO_Toggle(LED_Port, 13);
-  }
-   TIM_ClearITPendingBit(TIM1, TIM_FLAG_Update);
-}
 
 void TIM2_IRQHandler(void){
    

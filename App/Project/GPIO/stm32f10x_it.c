@@ -43,6 +43,7 @@
   * @param  None
   * @retval None
   */
+#include "mystm32f10x.h"
 void NMI_Handler(void)
 {
 }
@@ -154,5 +155,11 @@ void SysTick_Handler(void)
 /**
   * @}
   */ 
+
+void TIM1_IRQn(void){
+  MyGPIO_Toggle(GPIOC, 13);
+}
+
+
 
 

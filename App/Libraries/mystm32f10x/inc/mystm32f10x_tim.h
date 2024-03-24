@@ -7,7 +7,7 @@
 
 void TIM1_Config(void);
 void TIM2_Config(void);
-void MyTimer_Init(TIM_TypeDef *timer,u16 second,u16 millisecond,u16 microsecond,u8 Prioritygroup,u8 preemprionPriority,u8 subPriority);
+void MyTimer_Init(TIM_TypeDef *timer, u16 second,u16 millisecond,u16 microsecond,u8 Prioritygroup,u8 preemprionPriority,u8 subPriority);
 FlagStatus MyTimer_Conversion(u16 s, u16 ms, u16 us);
 void MyTimer_OnOrOffIrq(TIM_TypeDef *timer, FlagStatus Switch);
 void MyTimer_ClearCNT(TIM_TypeDef *timer);

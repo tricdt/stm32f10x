@@ -1,0 +1,9 @@
+.\objects\mem.o: ..\..\..\Libraries\stm32f10xEx\MeM.c
+.\objects\mem.o: ..\..\..\Libraries\stm32f10xEx\MeM.h
+.\objects\mem.o: ..\..\..\Libraries\stm32f10xEx\stm32f10xEx.h
+.\objects\mem.o: ..\..\..\Libraries\stm32f10xEx\MeM_config.h
+.\objects\mem.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+.\objects\mem.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+.\objects\mem.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\objects\mem.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdbool.h
+.\objects\mem.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
