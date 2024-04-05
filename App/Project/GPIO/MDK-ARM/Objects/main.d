@@ -1,6 +1,5 @@
 .\objects\main.o: ..\main.c
-.\objects\main.o: ..\stm32f10x_conf.h
-.\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
+.\objects\main.o: ..\..\..\Libraries\OpenEDV\inc\sys.h
 .\objects\main.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\objects\main.o: C:\Keil_v5\ARM\CMSIS\Include\core_cm3.h
 .\objects\main.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
@@ -8,6 +7,8 @@
 .\objects\main.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
 .\objects\main.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\objects\main.o: ..\..\GPIO\stm32f10x_conf.h
+.\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
+.\objects\main.o: ..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h
 .\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h
 .\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h
@@ -30,18 +31,3 @@
 .\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\main.o: ..\..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h
-.\objects\main.o: ..\..\GPIO\main.h
-.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_delay.h
-.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rcc.h
-.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_gpio.h
-.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_adc.h
-.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h
-.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_i2c.h
-.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_iwdg.h
-.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_usart.h
-.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rtc.h
-.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_spi.h
-.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_tim.h
-.\objects\main.o: ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_it.h
-.\objects\main.o: ..\..\..\Libraries\Led\inc\led.h

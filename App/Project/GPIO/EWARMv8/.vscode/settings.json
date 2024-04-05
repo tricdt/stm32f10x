@@ -1,0 +1,7 @@
+{
+   "files.associations": {
+      "mystm32f10x.h": "c",
+      "sys.h": "c",
+      "mystm32f10x_delay.h": "c"
+   }
+}

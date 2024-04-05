@@ -54,11 +54,14 @@ Call graph (*** = already visited):
   Program entry:
   0 __iar_program_start [72]
     0 __cmain [72]
-      0 __iar_data_init3 [20]
-        8 __iar_packbits_init_single3 [12]
-          20 - [0]
+      0 __iar_data_init3 [16]
+        8 __iar_zero_init3 [8]
+          16 - [0]
+        8 __iar_copy_init3 [0]
       0 __low_level_init [0]
       0 main [72]
+        24 DWTDelay_ms (main.o) [4]
+          28 - [0]
         24 GPIO_Config [32]
           40 GPIO_DeInit [8]
             48 RCC_APB2PeriphResetCmd [0]
@@ -67,6 +70,11 @@ Call graph (*** = already visited):
           40 RCC_APB2PeriphClockCmd [0]
         24 DWTDelay_Init [0]
         24 GPIO_DeInit [8] ***
+        24 GPIO_ResetBits [0] ***
+        24 GPIO_SetBits [0] ***
+        24 MeM_Init [32]
+          48 __aeabi_memcpy4 [8]
+            56 - [0]
         24 MyGPIO_Init [40]
           48 GPIO_Init [16] ***
           48 RCC_APB2PeriphClockCmd [0] ***

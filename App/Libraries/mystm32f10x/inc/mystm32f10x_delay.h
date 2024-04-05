@@ -1,7 +1,7 @@
 #ifndef __MYSTM32F10X_DELAY_H
 #define __MYSTM32F10X_DELAY_H
 #include "stm32f10x.h"
-
+#define SYSTEM_SUPPORT_OS 1
 void delay_init(uint8_t SYSCLK);
 void delay_ms(uint32_t nms);
 void delay_us(uint32_t nus);

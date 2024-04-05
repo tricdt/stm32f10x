@@ -49,4 +49,5 @@ mystm32f10x_rcc.pbi: \
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc/mystm32f10x_usart.h \
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc/mystm32f10x_rtc.h \
   D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc/mystm32f10x_spi.h \
-  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc/mystm32f10x_tim.h
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc/mystm32f10x_tim.h \
+  D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc/mystm32f10x_it.h

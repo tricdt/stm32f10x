@@ -20,9 +20,13 @@ D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\STM32F10x_StdPeriph
 -I
 D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\Led\inc
 -I
-D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc
--I
 D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\Applications\inc
+-I
+D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\stm32f10xEx
+-I
+D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\OpenEDV\inc
+-I
+D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8\..\..\..\Libraries\mystm32f10x\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\CMSIS\Core\Include
 -I
@@ -42,9 +46,13 @@ D:\MCU\STM32F10x\App\Libraries\STM32F10x_StdPeriph_Driver\inc
 -I
 D:\MCU\STM32F10x\App\Libraries\Led\inc
 -I
-D:\MCU\STM32F10x\App\Libraries\mystm32f10x\inc
--I
 D:\MCU\STM32F10x\App\Libraries\Applications\inc
+-I
+D:\MCU\STM32F10x\App\Libraries\stm32f10xEx
+-I
+D:\MCU\STM32F10x\App\Libraries\OpenEDV\inc
+-I
+D:\MCU\STM32F10x\App\Libraries\mystm32f10x\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\CMSIS\Core\Include
 -I

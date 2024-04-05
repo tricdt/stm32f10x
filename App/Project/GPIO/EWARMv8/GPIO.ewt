@@ -2385,7 +2385,7 @@
         </file>
     </group>
     <group>
-        <name>MyLibrary</name>
+        <name>Mylib</name>
         <file>
             <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_adc.c</name>
         </file>
@@ -2397,6 +2397,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_i2c.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_it.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_iwdg.c</name>
@@ -2415,6 +2418,15 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\Libraries\mystm32f10x\src\mystm32f10x_usart.c</name>
+        </file>
+    </group>
+    <group>
+        <name>OpenEDV</name>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\OpenEDV\src\delay.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\OpenEDV\src\sys.c</name>
         </file>
     </group>
     <group>
@@ -2487,6 +2499,12 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c</name>
+        </file>
+    </group>
+    <group>
+        <name>stm32Ex</name>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\Libraries\stm32f10xEx\MeM.c</name>
         </file>
     </group>
     <group>

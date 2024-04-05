@@ -8,7 +8,34 @@ typedef struct MeM_BlockHead {
 
 } MeM_BlockHead;
 
-volatile static u32 MeM_MemoryPool[MEMORY_MANAGE_POOL_SIZE/sizeof(u32)];
+//1. KeilC
+/** Macros for handling packed structs. */
+//#define STRINGIZE(X) #X
+//#define SL_PACK_START(X) _Pragma(STRINGIZE(pack(X)))
+//#define SL_PACK_END()    _Pragma("pack()")
+//#define SL_ATTRIBUTE_PACKED
+
+/** MDK-ARM compiler: Macros for handling aligned structs. */
+//#define SL_ALIGN(X) __align(X)
+//2. IAR
+
+/** Macros for handling packed structs. */
+#define STRINGIZE(X) #X
+//#define SL_PACK_START(X) _Pragma(STRINGIZE(pack(X)))
+//#define SL_PACK_END()    _Pragma("pack()")
+//#define SL_ATTRIBUTE_PACKED
+
+/** IAR Embedded Workbench: Macros for handling aligned structs. */
+#define SL_ALIGN(X) _pragma(STRINGIZE(data_alignment=X))
+//3. Simplicity Studio
+
+/** GCC style macro for handling packed structs. */
+//#define SL_ATTRIBUTE_PACKED __attribute__ ((packed))
+/** GCC style macro for aligning a variable. */
+//#define SL_ATTRIBUTE_ALIGN(X) __attribute__ ((aligned(X)))
+
+#pragma data_alignment = 32
+volatile static u32 MeM_MemoryPool[MEMORY_MANAGE_POOL_SIZE/sizeof(u32)] ;
 
 void MeM_Tidy(void){
     MeM_BlockHead *curBlock = (MeM_BlockHead *)MeM_MemoryPool;

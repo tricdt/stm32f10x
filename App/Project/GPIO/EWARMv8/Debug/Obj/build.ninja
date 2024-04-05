@@ -26,12 +26,15 @@ build mystm32f10x_adc.pbi : index mystm32f10x_adc.xcl
 build mystm32f10x_delay.pbi : index mystm32f10x_delay.xcl
 build mystm32f10x_gpio.pbi : index mystm32f10x_gpio.xcl
 build mystm32f10x_i2c.pbi : index mystm32f10x_i2c.xcl
+build mystm32f10x_it.pbi : index mystm32f10x_it.xcl
 build mystm32f10x_iwdg.pbi : index mystm32f10x_iwdg.xcl
 build mystm32f10x_rcc.pbi : index mystm32f10x_rcc.xcl
 build mystm32f10x_rtc.pbi : index mystm32f10x_rtc.xcl
 build mystm32f10x_spi.pbi : index mystm32f10x_spi.xcl
 build mystm32f10x_tim.pbi : index mystm32f10x_tim.xcl
 build mystm32f10x_usart.pbi : index mystm32f10x_usart.xcl
+build delay.pbi : index delay.xcl
+build sys.pbi : index sys.xcl
 build misc.pbi : index misc.xcl
 build stm32f10x_adc.pbi : index stm32f10x_adc.xcl
 build stm32f10x_bkp.pbi : index stm32f10x_bkp.xcl
@@ -55,15 +58,16 @@ build stm32f10x_spi.pbi : index stm32f10x_spi.xcl
 build stm32f10x_tim.pbi : index stm32f10x_tim.xcl
 build stm32f10x_usart.pbi : index stm32f10x_usart.xcl
 build stm32f10x_wwdg.pbi : index stm32f10x_wwdg.xcl
+build MeM.pbi : index MeM.xcl
 build main.pbi : index main.xcl
 build stm32f10x_it.pbi : index stm32f10x_it.xcl
 build GPIO_part0.pbi : link core_cm3.pbi system_stm32f10x.pbi mystm32f10x_adc.pbi mystm32f10x_delay.pbi mystm32f10x_gpio.pbi mystm32f10x_i2c.pbi
-build GPIO_part1.pbi : link mystm32f10x_iwdg.pbi mystm32f10x_rcc.pbi mystm32f10x_rtc.pbi mystm32f10x_spi.pbi mystm32f10x_tim.pbi mystm32f10x_usart.pbi
-build GPIO_part2.pbi : link misc.pbi stm32f10x_adc.pbi stm32f10x_bkp.pbi stm32f10x_can.pbi stm32f10x_cec.pbi stm32f10x_crc.pbi
-build GPIO_part3.pbi : link stm32f10x_dac.pbi stm32f10x_dbgmcu.pbi stm32f10x_dma.pbi stm32f10x_exti.pbi stm32f10x_flash.pbi stm32f10x_fsmc.pbi
-build GPIO_part4.pbi : link stm32f10x_gpio.pbi stm32f10x_i2c.pbi stm32f10x_iwdg.pbi stm32f10x_pwr.pbi stm32f10x_rcc.pbi stm32f10x_rtc.pbi
-build GPIO_part5.pbi : link stm32f10x_sdio.pbi stm32f10x_spi.pbi stm32f10x_tim.pbi stm32f10x_usart.pbi stm32f10x_wwdg.pbi main.pbi
-build GPIO_part6.pbi : link stm32f10x_it.pbi
+build GPIO_part1.pbi : link mystm32f10x_it.pbi mystm32f10x_iwdg.pbi mystm32f10x_rcc.pbi mystm32f10x_rtc.pbi mystm32f10x_spi.pbi mystm32f10x_tim.pbi
+build GPIO_part2.pbi : link mystm32f10x_usart.pbi delay.pbi sys.pbi misc.pbi stm32f10x_adc.pbi stm32f10x_bkp.pbi
+build GPIO_part3.pbi : link stm32f10x_can.pbi stm32f10x_cec.pbi stm32f10x_crc.pbi stm32f10x_dac.pbi stm32f10x_dbgmcu.pbi stm32f10x_dma.pbi
+build GPIO_part4.pbi : link stm32f10x_exti.pbi stm32f10x_flash.pbi stm32f10x_fsmc.pbi stm32f10x_gpio.pbi stm32f10x_i2c.pbi stm32f10x_iwdg.pbi
+build GPIO_part5.pbi : link stm32f10x_pwr.pbi stm32f10x_rcc.pbi stm32f10x_rtc.pbi stm32f10x_sdio.pbi stm32f10x_spi.pbi stm32f10x_tim.pbi
+build GPIO_part6.pbi : link stm32f10x_usart.pbi stm32f10x_wwdg.pbi MeM.pbi main.pbi stm32f10x_it.pbi
 build GPIO.pbd : link GPIO_part0.pbi GPIO_part1.pbi GPIO_part2.pbi GPIO_part3.pbi GPIO_part4.pbi GPIO_part5.pbi GPIO_part6.pbi
 build GPIO.pbw : browsedata GPIO.pbd
 

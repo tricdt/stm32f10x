@@ -3,5 +3,11 @@
     <project>
         <path>$WS_DIR$\GPIO.ewp</path>
     </project>
+    <project>
+        <path>$WS_DIR$\STM32F103C8T6.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\STM32F103VET6.ewp</path>
+    </project>
     <batchBuild />
 </workspace>

@@ -1,0 +1,19 @@
+{
+  "workspace": {
+    "path": "${workspaceFolder}\\GPIO.eww"
+  },
+  "workspaces": {
+    "${workspaceFolder}\\GPIO.eww": {
+      "configs": {
+        "${workspaceFolder}\\GPIO.ewp": "Debug",
+        "${workspaceFolder}\\STM32F103VET6.ewp": "Debug"
+      },
+      "selected": {
+        "path": "${workspaceFolder}\\GPIO.ewp"
+      }
+    }
+  },
+  "workbench": {
+    "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1"
+  }
+}

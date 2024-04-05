@@ -55,17 +55,17 @@ int main(void)
     /* Infinite loop */
     while (1){
       /*====LED-ON=======*/
-	  GPIO_SetBits(GPIOD , GPIO_Pin_8);
-	  GPIO_SetBits(GPIOD , GPIO_Pin_9);
-	  GPIO_SetBits(GPIOD , GPIO_Pin_10);
-	  GPIO_SetBits(GPIOD , GPIO_Pin_11);
+	  GPIO_SetBits(GPIOC , GPIO_Pin_6);
+	  GPIO_SetBits(GPIOC , GPIO_Pin_7);
+	  GPIO_SetBits(GPIOD, GPIO_Pin_6);
+	  GPIO_SetBits(GPIOD , GPIO_Pin_13);
 	  Delay(0xfffff);
 	  Delay(0xfffff);
 	  /*====LED-OFF=======*/ 
-	  GPIO_ResetBits(GPIOD , GPIO_Pin_8);
-	  GPIO_ResetBits(GPIOD , GPIO_Pin_9);
-	  GPIO_ResetBits(GPIOD , GPIO_Pin_10);
-	  GPIO_ResetBits(GPIOD , GPIO_Pin_11);
+	  GPIO_ResetBits(GPIOC , GPIO_Pin_6);
+	  GPIO_ResetBits(GPIOC , GPIO_Pin_7);
+	  GPIO_ResetBits(GPIOD , GPIO_Pin_6);
+	  GPIO_ResetBits(GPIOD , GPIO_Pin_13);
 	  Delay(0xfffff);
 	  Delay(0xfffff);			
     }
@@ -83,11 +83,20 @@ void GPIO_Configuration(void)
 {
   GPIO_InitTypeDef GPIO_InitStructure;
   
-  RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOD , ENABLE); 						 
+  RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOC , ENABLE); 						 
   /**
-  *  LED1 -> PD8 , LED2 -> PD9 , LED3 -> PD10 , LED4 -> PD11
+  *  LED1 -> PC6 , LED2 -> PC7 , LED3 -> PD6 , LED4 -> PD13
   */			
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7;
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; ; 
+  GPIO_Init(GPIOC, &GPIO_InitStructure);
+	
+	  RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOD , ENABLE); 						 
+  /**
+  *  LED1 -> PC6 , LED2 -> PC7 , LED3 -> PD6 , LED4 -> PD13
+  */			
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_13;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; ; 
   GPIO_Init(GPIOD, &GPIO_InitStructure);

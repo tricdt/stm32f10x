@@ -1,8 +1,9 @@
 
 #include "mystm32f10x.h"
 
-static u8  fac_us=0;
-static uint16_t fac_ms=0;
+static u8 fac_us=0; //us delay multiplier
+static u16 fac_ms=0; //ms delay multiplier, under ucos, represents the number of ms per beat
+
 
 
 void delay_init(uint8_t SYSCLK)
