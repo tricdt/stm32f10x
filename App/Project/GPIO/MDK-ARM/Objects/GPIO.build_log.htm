@@ -21,7 +21,7 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
 Dialog DLL:      TARMSTM.DLL V1.67.1.0
  
 <h2>Project:</h2>
-D:\MCU\STM32F10x\App\Project\GPIO\MDK-ARM\GPIO.uvprojx
+d:\MCU\STM32F10x\App\Project\GPIO\MDK-ARM\GPIO.uvprojx
 Project File Date:  04/02/2024
 
 <h2>Output:</h2>
@@ -29,6 +29,35 @@ Project File Date:  04/02/2024
 Rebuild target 'STM32F103C8T6'
 assembling startup_stm32f10x_md.s...
 compiling core_cm3.c...
+compiling mystm32f10x_rcc.c...
+..\..\GPIO\main.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_delay.h(41): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rcc.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_gpio.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_adc.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_i2c.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_iwdg.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_usart.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rtc.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_spi.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\src\mystm32f10x_rcc.c(498): warning:  #1-D: last line of file ends without a newline
+  #endif /* STM32F10X_LD_VL && STM32F10X_MD_VL */
+..\..\..\Libraries\mystm32f10x\src\mystm32f10x_rcc.c: 13 warnings, 0 errors
+compiling system_stm32f10x.c...
 compiling mystm32f10x_delay.c...
 ..\..\GPIO\main.h(7): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -61,12 +90,6 @@ compiling mystm32f10x_rtc.c...
 ..\..\..\Libraries\mystm32f10x\src\mystm32f10x_rtc.c(3): warning:  #1-D: last line of file ends without a newline
   void MyRTC_Deinit(void){}
 ..\..\..\Libraries\mystm32f10x\src\mystm32f10x_rtc.c: 2 warnings, 0 errors
-compiling mystm32f10x_spi.c...
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_spi.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\mystm32f10x\src\mystm32f10x_spi.c(3): warning:  #1-D: last line of file ends without a newline
-  void MySPI_DeInit(void){}
-..\..\..\Libraries\mystm32f10x\src\mystm32f10x_spi.c: 2 warnings, 0 errors
 compiling mystm32f10x_iwdg.c...
 ..\..\..\Libraries\mystm32f10x\src\mystm32f10x_iwdg.c(1): warning:  #1-D: last line of file ends without a newline
   #include "mystm32f10x_iwdg.h"
@@ -79,40 +102,12 @@ compiling mystm32f10x_i2c.c...
 ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_i2c.h(7): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\..\..\Libraries\mystm32f10x\src\mystm32f10x_i2c.c: 2 warnings, 0 errors
-compiling mystm32f10x_adc.c...
-..\..\..\Libraries\mystm32f10x\src\mystm32f10x_adc.c(1): warning:  #1-D: last line of file ends without a newline
-  #include "mystm32f10x_adc.h"
-..\..\GPIO\main.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_delay.h(41): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rcc.h(25): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_gpio.h(12): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_adc.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_i2c.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_iwdg.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
+compiling mystm32f10x_usart.c...
+..\..\..\Libraries\mystm32f10x\src\mystm32f10x_usart.c(1): warning:  #1-D: last line of file ends without a newline
+  #include "mystm32f10x_usart.h"
 ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_usart.h(7): warning:  #1-D: last line of file ends without a newline
   #endif
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rtc.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_spi.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h(15): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_adc.h(7): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\mystm32f10x\src\mystm32f10x_adc.c: 13 warnings, 0 errors
-compiling mystm32f10x_gpio.c...
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_gpio.h(12): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\mystm32f10x\src\mystm32f10x_gpio.c(45): warning:  #1-D: last line of file ends without a newline
-  }
-..\..\..\Libraries\mystm32f10x\src\mystm32f10x_gpio.c: 2 warnings, 0 errors
+..\..\..\Libraries\mystm32f10x\src\mystm32f10x_usart.c: 2 warnings, 0 errors
 compiling mystm32f10x_tim.c...
 ..\..\GPIO\main.h(7): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -141,7 +136,21 @@ compiling mystm32f10x_tim.c...
 ..\..\..\Libraries\mystm32f10x\src\mystm32f10x_tim.c(169): warning:  #1-D: last line of file ends without a newline
   }
 ..\..\..\Libraries\mystm32f10x\src\mystm32f10x_tim.c: 13 warnings, 0 errors
-compiling mystm32f10x_rcc.c...
+compiling mystm32f10x_spi.c...
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_spi.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\src\mystm32f10x_spi.c(3): warning:  #1-D: last line of file ends without a newline
+  void MySPI_DeInit(void){}
+..\..\..\Libraries\mystm32f10x\src\mystm32f10x_spi.c: 2 warnings, 0 errors
+compiling mystm32f10x_gpio.c...
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_gpio.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\mystm32f10x\src\mystm32f10x_gpio.c(45): warning:  #1-D: last line of file ends without a newline
+  }
+..\..\..\Libraries\mystm32f10x\src\mystm32f10x_gpio.c: 2 warnings, 0 errors
+compiling mystm32f10x_adc.c...
+..\..\..\Libraries\mystm32f10x\src\mystm32f10x_adc.c(1): warning:  #1-D: last line of file ends without a newline
+  #include "mystm32f10x_adc.h"
 ..\..\GPIO\main.h(7): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_delay.h(41): warning:  #1-D: last line of file ends without a newline
@@ -149,8 +158,6 @@ compiling mystm32f10x_rcc.c...
 ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_rcc.h(25): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_gpio.h(12): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h(15): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_adc.h(7): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -166,16 +173,9 @@ compiling mystm32f10x_rcc.c...
   #endif
 ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h(15): warning:  #1-D: last line of file ends without a newline
   #endif
-..\..\..\Libraries\mystm32f10x\src\mystm32f10x_rcc.c(498): warning:  #1-D: last line of file ends without a newline
-  #endif /* STM32F10X_LD_VL && STM32F10X_MD_VL */
-..\..\..\Libraries\mystm32f10x\src\mystm32f10x_rcc.c: 13 warnings, 0 errors
-compiling system_stm32f10x.c...
-compiling mystm32f10x_usart.c...
-..\..\..\Libraries\mystm32f10x\src\mystm32f10x_usart.c(1): warning:  #1-D: last line of file ends without a newline
-  #include "mystm32f10x_usart.h"
-..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_usart.h(7): warning:  #1-D: last line of file ends without a newline
+..\..\..\Libraries\mystm32f10x\inc\mystm32f10x_adc.h(7): warning:  #1-D: last line of file ends without a newline
   #endif
-..\..\..\Libraries\mystm32f10x\src\mystm32f10x_usart.c: 2 warnings, 0 errors
+..\..\..\Libraries\mystm32f10x\src\mystm32f10x_adc.c: 13 warnings, 0 errors
 compiling mystm32f10x_it.c...
 ..\..\GPIO\main.h(7): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -205,40 +205,42 @@ compiling mystm32f10x_it.c...
 compiling misc.c...
 compiling stm32f10x_adc.c...
 compiling stm32f10x_bkp.c...
-compiling stm32f10x_can.c...
 compiling stm32f10x_cec.c...
 compiling stm32f10x_crc.c...
-compiling stm32f10x_dac.c...
+compiling stm32f10x_can.c...
 compiling stm32f10x_dbgmcu.c...
-compiling stm32f10x_exti.c...
 compiling stm32f10x_dma.c...
-compiling stm32f10x_flash.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_exti.c...
 compiling stm32f10x_fsmc.c...
-compiling stm32f10x_i2c.c...
+compiling stm32f10x_flash.c...
 compiling stm32f10x_gpio.c...
 compiling stm32f10x_iwdg.c...
+compiling stm32f10x_i2c.c...
 compiling stm32f10x_pwr.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_rtc.c...
 compiling stm32f10x_sdio.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_rcc.c...
 compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
 compiling stm32f10x_wwdg.c...
 compiling stm32f10x_usart.c...
 compiling main.c...
 ..\..\..\Libraries\OpenEDV\inc\sys.h(74): warning:  #1-D: last line of file ends without a newline
   #endif
+..\..\..\Libraries\OpenEDV\inc\delay.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\OpenEDV\inc\openedv.h(5): warning:  #1-D: last line of file ends without a newline
+  #endif
 ..\main.c(29): warning:  #188-D: enumerated type mixed with another type
   volatile FlagStatus myTimer = 0;
 ..\main.c(33): warning:  #223-D: function "SetSysClock" declared implicitly
      SetSysClock();
-..\main.c(37): warning:  #223-D: function "MyGPIO_Init" declared implicitly
-     MyGPIO_Init(LED_Port, LED_Pin, LED_Mode, LED_Speed,LED_Bus);
 ..\main.c(50): warning:  #223-D: function "delay_ms" declared implicitly
       delay_ms(100);
 ..\main.c(78): warning:  #223-D: function "MyGPIO_Toggle" declared implicitly
         MyGPIO_Toggle(LED_Port, 13);
-..\main.c: 6 warnings, 0 errors
-compiling stm32f10x_tim.c...
+..\main.c: 7 warnings, 0 errors
 compiling stm32f10x_it.c...
 ..\..\GPIO\main.h(7): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -265,10 +267,6 @@ compiling stm32f10x_it.c...
 ..\..\..\Libraries\mystm32f10x\inc\mystm32f10x.h(15): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\stm32f10x_it.c: 12 warnings, 0 errors
-compiling sys.c...
-..\..\..\Libraries\OpenEDV\inc\sys.h(74): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\..\..\Libraries\OpenEDV\src\sys.c: 1 warning, 0 errors
 compiling MeM.c...
 ..\..\..\Libraries\stm32f10xEx\stm32f10xEx.h(9): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -277,23 +275,27 @@ compiling MeM.c...
 ..\..\..\Libraries\stm32f10xEx\MeM.c(37): warning:  #161-D: unrecognized #pragma
   #pragma data_alignment = 32
 ..\..\..\Libraries\stm32f10xEx\MeM.c: 3 warnings, 0 errors
+compiling sys.c...
+..\..\..\Libraries\OpenEDV\inc\sys.h(74): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\Libraries\OpenEDV\src\sys.c: 1 warning, 0 errors
 linking...
-Program Size: Code=2200 RO-data=300 RW-data=32 ZI-data=1656  
+Program Size: Code=2144 RO-data=300 RW-data=32 ZI-data=1656  
 FromELF: creating hex file...
-".\Objects\GPIO.axf" - 0 Error(s), 97 Warning(s).
+".\Objects\GPIO.axf" - 0 Error(s), 98 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: Keil
-                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
-                Keil::STM32F1xx_DFP@2.4.0
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
                 STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
-  C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include
+  C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

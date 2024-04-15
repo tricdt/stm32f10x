@@ -1,7 +1,7 @@
 #ifdef STM32F10X_MD
 
-#include "openedv.h"
-//#include "mystm32f10x.h"
+
+#include "mystm32f10x.h"
 #define LED_Pin   GPIO_Pin_13
 #define LED_Speed GPIO_Speed_50MHz
 #define LED_Mode  GPIO_Mode_Out_PP
@@ -30,6 +30,7 @@ volatile FlagStatus myTimer = 0;
 void GPIO_Config(void);
 u32 clk;
 int main(void){
+   
    SetSysClock();
    RCC_GetClocksFreq(&RCC_ClockFreq);
    GPIO_Config();

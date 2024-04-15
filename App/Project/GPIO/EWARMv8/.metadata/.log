@@ -1,0 +1,84 @@
+!SESSION 2024-04-12 23:35:41.308 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-04-12 23:35:50.700
+!MESSAGE Using CMSIS pack repositories: http://links.iar.com/cmsis/pack
+
+!ENTRY com.iar.cmsismanager.product 1 0 2024-04-12 23:35:52.688
+!MESSAGE CMSIS Agent interface registered with service registry at ServiceLocation(host:\\.\pipe\iar-cspy-cpp-binary-com.iar.thrift.service.registry-47a68ef1-053c-4867-83e4-5c5fe1ab391d-1, port:0, protocol:Binary, transport:Pipe)
+!SESSION 2024-04-12 23:43:45.453 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-04-12 23:43:47.320
+!MESSAGE Using CMSIS pack repositories: http://links.iar.com/cmsis/pack
+
+!ENTRY com.iar.cmsismanager.product 1 0 2024-04-12 23:43:48.599
+!MESSAGE CMSIS Agent interface registered with service registry at ServiceLocation(host:\\.\pipe\iar-cspy-cpp-binary-com.iar.thrift.service.registry-47a68ef1-053c-4867-83e4-5c5fe1ab391d-1, port:0, protocol:Binary, transport:Pipe)
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-04-12 23:49:26.334
+!MESSAGE Performing pack conversion...
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-04-12 23:49:30.267
+!MESSAGE Performing pack conversion...
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-04-12 23:49:37.851
+!MESSAGE Pack has been converted.
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-04-12 23:49:39.166
+!MESSAGE Performing pack conversion...
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-04-12 23:49:44.833
+!MESSAGE Pack has been converted.
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-04-12 23:49:53.986
+!MESSAGE Performing pack conversion...
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-04-12 23:49:56.079
+!MESSAGE Pack has been converted.
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-04-12 23:50:26.394
+!MESSAGE Pack has been converted.
+!SESSION 2024-04-13 06:12:44.694 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-04-13 06:12:46.574
+!MESSAGE Using CMSIS pack repositories: http://links.iar.com/cmsis/pack
+
+!ENTRY com.iar.cmsismanager.product 1 0 2024-04-13 06:12:48.714
+!MESSAGE CMSIS Agent interface registered with service registry at ServiceLocation(host:\\.\pipe\iar-cspy-cpp-binary-com.iar.thrift.service.registry-47a68ef1-053c-4867-83e4-5c5fe1ab391d-1, port:0, protocol:Binary, transport:Pipe)
+!SESSION 2024-04-13 06:14:56.009 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-04-13 06:14:56.823
+!MESSAGE Using CMSIS pack repositories: http://links.iar.com/cmsis/pack
+
+!ENTRY com.iar.cmsismanager.product 1 0 2024-04-13 06:15:00.303
+!MESSAGE CMSIS Agent interface registered with service registry at ServiceLocation(host:\\.\pipe\iar-cspy-cpp-binary-com.iar.thrift.service.registry-47a68ef1-053c-4867-83e4-5c5fe1ab391d-1, port:0, protocol:Binary, transport:Pipe)
+!SESSION 2024-04-13 06:15:35.787 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data D:\MCU\STM32F10x\App\Project\GPIO\EWARMv8
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2024-04-13 06:15:36.596
+!MESSAGE Using CMSIS pack repositories: http://links.iar.com/cmsis/pack
+
+!ENTRY com.iar.cmsismanager.product 1 0 2024-04-13 06:15:40.084
+!MESSAGE CMSIS Agent interface registered with service registry at ServiceLocation(host:\\.\pipe\iar-cspy-cpp-binary-com.iar.thrift.service.registry-47a68ef1-053c-4867-83e4-5c5fe1ab391d-1, port:0, protocol:Binary, transport:Pipe)

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+  <device Dclock="72000000" Dcore="Cortex-M3" DcoreVersion="r1p1" Dendian="Little-endian" Dfamily="STM32F1 Series" Dfpu="NO_FPU" Dmpu="NO_MPU" Dname="STM32F103C8" DsubFamily="STM32F103" Dvendor="STMicroelectronics:13" info="ARM , 20 KB RAM, 64 KB ROM" url="http://www.keil.com/dd2/st/stm32f103c8">
+    <package info="STMicroelectronics STM32F1 Series Device Support, Drivers and Examples" name="STM32F1xx_DFP" url="https://www.keil.com/pack/" vendor="Keil" version="2.4.1"/>
+  </device>
+  <toolchain Tcompiler="IAR" Toutput="exe"/>
+  <components>
+    <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="6.0.0">
+      <package name="CMSIS" url="https://www.keil.com/pack/" vendor="ARM" version="6.0.0"/>
+      <file category="doc" name="CMSIS/Documentation/html/Core/index.html"/>
+      <file category="include" name="CMSIS/Core/Include/"/>
+      <file category="header" condition="TrustZone" name="CMSIS/Core/Include/tz_context.h"/>
+      <file attr="template" category="sourceC" condition="TZ Secure" name="CMSIS/Core/Template/ARMv8-M/main_s.c" select="Secure mode 'main' module for ARMv8-M" version="1.1.1"/>
+      <file attr="template" category="sourceC" condition="TZ Secure" name="CMSIS/Core/Template/ARMv8-M/tz_context.c" select="RTOS Context Management (TrustZone for ARMv8-M)" version="1.1.1"/>
+    </component>
+    <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" deviceDependent="1">
+      <package name="STM32F1xx_DFP" url="https://www.keil.com/pack/" vendor="Keil" version="2.4.1"/>
+      <file category="include" deviceDependent="1" name="Device/Include/"/>
+      <file attr="config" category="source" deviceDependent="1" name="Device/Source/system_stm32f10x.c" version="1.0.1"/>
+      <file attr="config" category="header" deviceDependent="1" name="RTE_Driver/Config/RTE_Device.h" version="1.1.2"/>
+    </component>
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="GPIO" Cvendor="Keil" Cversion="3.6.0" deviceDependent="1">
+      <package name="STM32F1xx_DFP" url="https://www.keil.com/pack/" vendor="Keil" version="2.4.1"/>
+      <file category="header" deviceDependent="1" name="Device/StdPeriph_Driver/inc/stm32f10x_gpio.h"/>
+      <file category="source" deviceDependent="1" name="Device/StdPeriph_Driver/src/stm32f10x_gpio.c"/>
+    </component>
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="RCC" Cvendor="Keil" Cversion="3.6.0" deviceDependent="1">
+      <package name="STM32F1xx_DFP" url="https://www.keil.com/pack/" vendor="Keil" version="2.4.1"/>
+      <file category="header" deviceDependent="1" name="Device/StdPeriph_Driver/inc/stm32f10x_rcc.h"/>
+      <file category="source" deviceDependent="1" name="Device/StdPeriph_Driver/src/stm32f10x_rcc.c"/>
+    </component>
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="TIM" Cvendor="Keil" Cversion="3.6.0" deviceDependent="1">
+      <package name="STM32F1xx_DFP" url="https://www.keil.com/pack/" vendor="Keil" version="2.4.1"/>
+      <file category="header" deviceDependent="1" name="Device/StdPeriph_Driver/inc/stm32f10x_tim.h"/>
+      <file category="source" deviceDependent="1" name="Device/StdPeriph_Driver/src/stm32f10x_tim.c"/>
+    </component>
+  </components>
+  <apis/>
+  <packages useAllLatestPacks="1"/>
+</configuration>
